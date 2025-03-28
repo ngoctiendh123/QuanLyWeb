@@ -1,0 +1,132 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body tổng thể */
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Container chính */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Form nhóm */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Nhóm input theo hàng */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Label */
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input */
+.form-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: 0.3s;
+}
+
+/* Hiệu ứng input khi focus */
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    background: #fff;
+}
+
+/* Nút Thêm Sản Phẩm */
+.form-group button {
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.form-group button:hover {
+    background: #218838;
+}
+
+/* Nút Quay Lại */
+.back-btn {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+    width: 100%;
+}
+
+.back-btn:hover {
+    background: #c82333;
+}
+
+/* Thiết lập phản hồi cho điện thoại */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    header {
+        font-size: 22px;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+}

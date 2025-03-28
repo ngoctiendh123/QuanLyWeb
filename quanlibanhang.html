@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Bán hàng</title>
+    <link rel="stylesheet" href="quanlibanhang.css">
+    <script type="module" src="indexeddb.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="./indexeddb.js"></script>
+    <script type="module" src="./script.js"></script>
+
+</head>
+<body>
+    <div class="container"></div>
+    <!-- Nút mở menu -->
+    <button class="menu-btn" onclick="openMenu()">☰ Menu</button>
+    <!-- Menu ẩn -->
+    <nav id="menu">
+     
+        <ul>
+            <li><a href="index.html">🏠 Trang Chủ</a></li>
+            <li><a href="sanpham.html">📦 Sản phẩm</a></li>
+            <li><a href="giohang.html">🛒 Giỏ hàng</a></li>
+            <li><a href="nhaphang.html">📥 Ngày nhập hàng</a></li>
+            <li><a href="banhang.html">📤 Ngày bán hàng</a></li>
+            <li><a href="doanhthu.html">💰 Doanh thu</a></li>
+            <li><a href="./themsanpham.html">➕ Thêm Sản Phẩm</a></li>
+            <li><a href="sua/sua.html">✏️ Sửa Sản Phẩm</a></li>
+            <li><a href="xoa/xoa.html">❌ Xóa Sản Phẩm</a></li>
+        </ul>
+    </nav>
+    <h3>Danh sách sản phẩm</h3>
+    <div id="productList"></div> <!-- Danh sách sản phẩm sẽ hiển thị ở đây -->  
+    </div>
+</body>
+</html>

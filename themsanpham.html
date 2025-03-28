@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Sản Phẩm</title>
+    <link rel="stylesheet" href="themsanpham.css">
+
+    <!-- Import JavaScript -->
+    <script type="module" src="./firebase.js"></script>
+    <script type="module" src="./indexeddb.js"></script>
+    <script type="module" src="themsanpham.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Thêm Sản Phẩm</h1>
+    </header>
+
+    <!-- Form nhập sản phẩm -->
+    <div class="container">
+        <form id="productForm">
+            <div class="form-group">
+                <label for="productName">Tên sản phẩm</label>
+                <input type="text" id="productName" placeholder="Nhập tên sản phẩm" required>
+
+                <label for="productQuantity">Số lượng</label>
+                <input type="number" id="productQuantity" placeholder="Nhập số lượng" required>
+
+                <label for="productPrice">Giá sản phẩm</label>
+                <input type="number" id="productPrice" placeholder="Nhập giá" required>
+
+                <button type="submit" id="addProductBtn">Thêm Sản Phẩm</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Nút quay lại -->
+    <a href="index.html" class="back-btn">⬅ Quay lại</a>
+
+</body>
+</html>
