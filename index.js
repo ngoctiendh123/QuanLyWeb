@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll("nav ul li a");
 
-    links.forEach(link => {
+   links.forEach(link => {
         link.addEventListener("click", function (event) {
             event.preventDefault();
             const page = this.getAttribute("href");
-
+            if (page !== "/quanlibanan.html") {
+                window.location.href = page; // Chuyển đến trang được chọn
+            } else {
+                alert("Tính năng này đang được phát triển!");
+            }
             if (page !== "/quanlibanhang.html") {
                 window.location.href = page; // Chuyển đến trang được chọn
             } else {
